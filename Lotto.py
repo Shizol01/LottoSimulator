@@ -2,9 +2,10 @@ import random
 
 def input_numbers():
     '''Takes numbers from player until 6 correct numbers are collected.
+    No double numbers, no numbers outside of range 1 to 49, no crashing with other inputs.
 
     :rtype: int list
-    :return: list of int numbers
+    :return: list of int numbers choosen by player
     '''
     numbers = []
     while len(numbers) < 6:
